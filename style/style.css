@@ -19,6 +19,7 @@ ul{
 .etiquetas{
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .prioridade-alta{
@@ -27,6 +28,7 @@ ul{
     border-radius: 4px;
     background-color: #CF3F3F;
     padding: 4px 12px;
+    margin: 4px 0;
 }
 
 .prioridade-media{
@@ -35,6 +37,7 @@ ul{
     border-radius: 4px;
     background-color: #FFBD3D;
     padding: 4px 12px;
+    margin: 4px 0;
 }
 
 .prioridade-baixa{
@@ -43,6 +46,7 @@ ul{
     border-radius: 4px;
     background-color: #72C240;
     padding: 4px 12px;
+    margin: 4px 0;
 }
 
 .data{
@@ -50,6 +54,7 @@ ul{
     border-radius: 4px;
     padding: 4px 12px;
     color: #B6B6B6;
+    margin: 4px 0;
 }
 
 .nome{
@@ -57,12 +62,13 @@ ul{
     border-radius: 4px;
     padding: 4px 12px;
     color: #B6B6B6;
+    margin: 4px 0;
 }
 
 .tarefa-descricao{
     gap: 16px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 h2{
