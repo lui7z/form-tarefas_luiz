@@ -1,0 +1,14 @@
+.tarefa {
+    border: 1px solid #5C5C5C;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+ul{
+    list-style: none;
+}
+
+.tarefa-descricao{
+    display: flex;
+    align-items: center;
+}
