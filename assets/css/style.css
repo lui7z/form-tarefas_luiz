@@ -22,29 +22,23 @@ ul{
     flex-wrap: wrap;
 }
 
-.prioridade-alta{
+.prioridade{
     color: #FFFFFF;
-    border: 0px solid #CF3F3F;
     border-radius: 4px;
-    background-color: #CF3F3F;
     padding: 4px 12px;
     margin: 4px 0;
 }
 
-.prioridade-media{
+.prioridade{
     color: #FFFFFF;
-    border: 0px solid #FFBD3D;
     border-radius: 4px;
-    background-color: #FFBD3D;
     padding: 4px 12px;
     margin: 4px 0;
 }
 
-.prioridade-baixa{
+.prioridade{
     color: #FFFFFF;
-    border: 0px solid #72C240;
     border-radius: 4px;
-    background-color: #72C240;
     padding: 4px 12px;
     margin: 4px 0;
 }
