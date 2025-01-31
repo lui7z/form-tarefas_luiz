@@ -14,4 +14,4 @@ function corPrioridade() {
     });
 }
 
-window.onload = definirPrioridade;
+window.onload = corPrioridade;
