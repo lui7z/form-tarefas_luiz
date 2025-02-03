@@ -1,5 +1,14 @@
+window.onload = carregarFuncoes;
+
+function carregarFuncoes(){
+    corPrioridade();
+    ordemPrioridade();
+}
+
+var prioridade = document.getElementsByClassName("prioridade");
+
 function corPrioridade() {
-    const prioridade = document.getElementsByClassName("prioridade");
+    var prioridade = document.getElementsByClassName("prioridade");
     Array.from(prioridade).forEach(prio => {
         if (prio.textContent == 'Alta') {
             prio.style.backgroundColor = '#CF3F3F';
@@ -14,4 +23,28 @@ function corPrioridade() {
     });
 }
 
-window.onload = corPrioridade;
+function ordemPrioridade(){
+    var ordem = document.getElementsByClassName("ordem")[0];
+    var altaPrioridade = [];
+    var mediaPrioridade = [];
+    var baixaPrioridade = [];
+
+    Array.from(prioridade).forEach(prio => {
+        var lista = prio.closest("ul");
+        if (prio.textContent == 'Alta') {
+            altaPrioridade.push(lista);
+        } else if (prio.textContent == 'Média') {
+            mediaPrioridade.push(lista);
+        } else if (prio.textContent == 'Baixa') {
+            baixaPrioridade.push(lista);
+        }
+    });
+
+    while (ordem.firstChild) {
+        ordem.removeChild(ordem.firstChild);
+    }
+
+    altaPrioridade.forEach(lista => ordem.appendChild(lista));
+    mediaPrioridade.forEach(lista => ordem.appendChild(lista));
+    baixaPrioridade.forEach(lista => ordem.appendChild(lista));
+}
