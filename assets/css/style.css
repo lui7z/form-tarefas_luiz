@@ -1,7 +1,10 @@
 .titulo{
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-poppins);
     font-size: 24px;
     font-weight: bold;
-    color: #4A4A4A;
+    color: var(--tundora);
 }
 
 ul{
@@ -10,49 +13,67 @@ ul{
 
 .tarefa {
     box-sizing: border-box;
-    border: 1px solid #5C5C5C;
+    width: 1024px;
+    border: 1px solid;
     border-radius: 16px;
     padding: 16px;
-    width: 1024px;
 }
 
 .etiquetas{
-    font-weight: bold;
     display: flex;
+    font-family: var(--fonte-poppins);
+    font-weight: 600;
     gap: 8px;
-    flex-wrap: wrap;
-}
-
-.prioridade{
-    color: #FFFFFF;
-    border-radius: 4px;
-    padding: 4px 12px;
-    margin: 4px 0;
 }
 
 .etiqueta{
-    border: 1px solid #B6B6B6;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--nobel);
     border-radius: 4px;
-    padding: 4px 12px;
-    color: #B6B6B6;
-    margin: 4px 0;
+    color: var(--nobel);
+    padding: 4px 8px;
 }
 
 .tarefa-descricao{
-    gap: 16px;
     display: flex;
-    align-items: flex-start;
-    color: #181818;
+    align-items: center;
+    font-family: var(--fonte-poppins);
+    color: var(--cod-gray);
+    gap: 16px;
 }
 
 h2{
-    border-right: 1px solid #5C5C5C;
-    padding-right: 16px;
+    font-weight: bold;
     font-size: 20px;
-    font-weight: bolder;
+    border-right: 1px solid var(--nobel);
+    padding-right: 16px;
 }
 
 p{
-    padding-top: 4px;
     font-size: 16px;
+}
+
+.prioridade-alta{
+    background-color: var(--flush-mahogany);
+    border: 0px solid var(--flush-mahogany);
+    border-radius: 4px;
+    color: var(--white);
+    padding: 4px 12px;
+}
+
+.prioridade-media{
+    background-color: var(--yellow-orange);
+    border: 0px solid var(--yellow-orange);
+    border-radius: 4px;
+    color: var(--white);
+    padding: 4px 12px;
+}
+
+.prioridade-baixa{
+    background-color: var(--sushi);
+    border: 0px solid var(--sushi);
+    border-radius: 4px;
+    color: var(--white);
+    padding: 4px 12px;
 }
