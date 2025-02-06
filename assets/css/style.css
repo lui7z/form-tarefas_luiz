@@ -1,10 +1,15 @@
 .titulo{
-    display: flex;
-    justify-content: center;
     font-family: var(--fonte-poppins);
     font-size: 24px;
     font-weight: bold;
     color: var(--tundora);
+    display: flex;
+    justify-content: center;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
 }
 
 ul{
