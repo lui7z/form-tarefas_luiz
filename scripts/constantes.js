@@ -1,4 +1,4 @@
-const TAREFAS = [
+export const TAREFAS = [
     {
         titulo: 'Revisar design responsivo',
         descricao: 'Garantir que o site funciona em todos os dispositivos.',
@@ -39,3 +39,5 @@ const TAREFAS = [
         responsavel: ['Luísa']
     },
 ]
+
+export const PRIORIDADES = ['Alta', 'Média', 'Baixa']

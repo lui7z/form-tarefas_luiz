@@ -1,8 +1,11 @@
-window.onload = carregarFuncoes;
+import { TAREFAS } from './constantes.js'
+
+document.addEventListener('DOMContentLoaded', carregarFuncoes);
 
 function carregarFuncoes(){
     corPrioridade();
     ordemPrioridade();
+    criarTarefa();
 }
 
 function corPrioridade() {
@@ -46,5 +49,8 @@ function ordemPrioridade(){
 }
 
 function criarTarefa(){
-    const listaDeTarefas = document.getElementById("listaDeTarefas");
+    const listaDeTarefas = document.getElementById('listaDeTarefas');
+
+    console.log(listaDeTarefas);
 }
+
