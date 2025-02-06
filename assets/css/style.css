@@ -12,16 +12,14 @@
     justify-content: center;
 }
 
-ul{
-    list-style: none;
-}
-
 .tarefa {
     box-sizing: border-box;
     width: 1024px;
     border: 1px solid;
     border-radius: 16px;
     padding: 16px;
+    margin: 24px;
+    list-style: none;
 }
 
 .etiquetas{

@@ -26,7 +26,7 @@ function ordemPrioridade(){
     var prioridades = document.getElementsByClassName("prioridade");
 
     Array.from(prioridades).forEach(prio => {
-        var lista = prio.closest("ul");
+        var lista = prio.closest("li");
         if (prio.textContent == 'Alta') {
             altaPrioridade.push(lista);
         } else if (prio.textContent == 'Média') {
@@ -43,4 +43,8 @@ function ordemPrioridade(){
     altaPrioridade.forEach(lista => ordem.appendChild(lista));
     mediaPrioridade.forEach(lista => ordem.appendChild(lista));
     baixaPrioridade.forEach(lista => ordem.appendChild(lista));
+}
+
+function criarTarefa(){
+    const listaDeTarefas = document.getElementById("listaDeTarefas");
 }
