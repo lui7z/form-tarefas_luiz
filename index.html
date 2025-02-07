@@ -7,30 +7,38 @@
     <link href="base/global.css" rel="stylesheet">
 </head>
 <body>
-    <div class="centro">
-        <form>
-            <ul>
-                <li>
-                    <div class="line1">
+    <form>
+        <div class="centro">
+            <ul class="boxform">
+                <li class="align1">
+                    <div class="align2">
                         <label>Título</label>
-                        <input placeholder="Ex.: Revisar código crítico" class="titulo">
+                        <input class="titulo" placeholder="Ex.: Revisar código crítico">
+                    </div>
+                    <div class="align2">
                         <label>Prioridade</label>
-                        <select>
+                        <select class="prio">
                             <option value="Alta">Alta</option>
                             <option value="Média">Média</option>
                             <option value="Baixa">Baixa</option>
                         </select>
+                    </div>
+                    <div class="align">
                         <label>Data</label>
                         <input class="data" placeholder="12/12/2012">
                     </div>
                 </li>
-                <li>
-                    <div class="line2">
+                <li class="align1">
+                    <div class="align2">
                         <label>Descrição</label>
                         <input class="desc" placeholder="Revisar bugs críticos no módulo principal.">
-                        <h5>Responsável (is):</h1>
-                        <div></div>
                     </div>
+                    <div class="align2">
+                        <h5>Responsável (is):</h1>
+                        <div>Aoba</div>
+                    </div>
+                <li>
+                    <div></div>
                 </li>
                 <li>
                     <div class="line3">
@@ -39,8 +47,8 @@
                     </div>
                 </li>
             </ul>
-        </form>
-    </div>
+        </div>
+    </form>
     <main>
         <div class="main-titulo">
             <h1>Tarefas</h1>
@@ -58,7 +66,7 @@
                         <p>Garantir que o site funciona em todos os dispositivos.</p>
                     </div>
                 </li>
-                
+
                 <li class="tarefa">
                     <div class="etiquetas">
                         <div class="prioridade">Média</div>
