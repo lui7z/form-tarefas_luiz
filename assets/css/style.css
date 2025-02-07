@@ -1,13 +1,11 @@
-.centro {
-    display: flex;
-    justify-content: center;
+html{
+    font-family: var(--fonte-poppins);
 }
 
 form{
     box-sizing: border-box;
     border: 1px solid var(--scorpion);
     border-radius: 16px;
-    width: 1024px;
     padding: 40px;
     
     ul{
@@ -15,12 +13,16 @@ form{
     }
 }
 
-.line1, .prio, .titulo, .data{
+.line1, .titulo, .data, .desc, select{
     border-radius: 8px;
     height: 40px;
     display: flex;
     gap: 24px;
     margin-bottom: 16px;
+}
+
+.titulo, .data, .desc{
+    border: 1px solid var(--tundora);    
 }
 
 .prio{
@@ -47,8 +49,23 @@ form{
     gap: 24px;
 }
 
-.tarefah1{
-    font-family: var(--fonte-poppins);
+a{
+    padding: 0.2rem 5rem;
+    border-radius: 8px;
+}
+
+.limpar{
+    background-color: var(--white);
+    border: 1px solid var(--tundora);
+}
+
+.adicionar{
+    background-color: var(--tundora);
+    color: var(--white);
+}
+
+
+.main-titulo{
     font-size: 24px;
     font-weight: bold;
     color: var(--tundora);
@@ -56,26 +73,29 @@ form{
     justify-content: center;
 }
 
+.centro {
+    display: flex;
+    justify-content: center;
+}
+
+
 .tarefa {
+    list-style: none;
     box-sizing: border-box;
     width: 1024px;
     border: 1px solid var(--scorpion);
     border-radius: 16px;
     padding: 16px;
-    margin: 24px;
-    list-style: none;
+    margin-bottom: 24px;
 }
 
 .etiquetas{
     display: flex;
-    font-family: var(--fonte-poppins);
     font-weight: 600;
     gap: 8px;
 }
 
 .etiqueta{
-    display: flex;
-    align-items: center;
     border: 1px solid var(--nobel);
     border-radius: 4px;
     color: var(--nobel);
@@ -85,7 +105,6 @@ form{
 .tarefa-descricao{
     display: flex;
     align-items: center;
-    font-family: var(--fonte-poppins);
     color: var(--cod-gray);
     gap: 16px;
 }

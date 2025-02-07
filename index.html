@@ -27,92 +27,90 @@
                 <li>
                     <div class="line2">
                         <label>Descrição</label>
-                        <input placeholder="Revisar bugs críticos no módulo principal.">
+                        <input class="desc" placeholder="Revisar bugs críticos no módulo principal.">
                         <h5>Responsável (is):</h1>
                         <div></div>
                     </div>
                 </li>
                 <li>
                     <div class="line3">
-                        <button>Limpar</button>
-                        <button>Adicionar</button>
+                        <a class="limpar">Limpar</a>
+                        <a class="adicionar">Adicionar</a>
                     </div>
                 </li>
             </ul>
         </form>
     </div>
     <main>
-        <div class="tarefah1">
+        <div class="main-titulo">
             <h1>Tarefas</h1>
         </div>
         <div class="centro">
-            <div class="ordem">
-                <ul id="listaDeTarefas">
-                    <li class="tarefa">
-                        <div class="etiquetas">
-                            <div class="prioridade">Baixa</div>
-                            <div class="etiqueta">10/12/2012</div>
-                            <div class="etiqueta">Fernanda</div>
-                        </div>
-                        <div class="tarefa-descricao">
-                            <h2>Revisar design responsivo</h2>
-                            <p>Garantir que o site funciona em todos os dispositivos.</p>
-                        </div>
-                    </li>
+            <ul id="listaDeTarefas">
+                <li class="tarefa">
+                    <div class="etiquetas">
+                        <div class="prioridade">Baixa</div>
+                        <div class="etiqueta">10/12/2012</div>
+                        <div class="etiqueta">Fernanda</div>
+                    </div>
+                    <div class="tarefa-descricao">
+                        <h2>Revisar design responsivo</h2>
+                        <p>Garantir que o site funciona em todos os dispositivos.</p>
+                    </div>
+                </li>
                 
-                    <li class="tarefa">
-                        <div class="etiquetas">
-                            <div class="prioridade">Média</div>
-                            <div class="etiqueta">12/12/2012</div>
-                            <div class="etiqueta">Alice</div>
-                            <div class="etiqueta">Carlos</div>
-                        </div>
-                        <div class="tarefa-descricao">
-                            <h2>Implementar autenticação</h2>
-                            <p>Adicionar sistema de login seguro.</p>
-                        </div>
-                    </li>
+                <li class="tarefa">
+                    <div class="etiquetas">
+                        <div class="prioridade">Média</div>
+                        <div class="etiqueta">12/12/2012</div>
+                        <div class="etiqueta">Alice</div>
+                        <div class="etiqueta">Carlos</div>
+                    </div>
+                    <div class="tarefa-descricao">
+                        <h2>Implementar autenticação</h2>
+                        <p>Adicionar sistema de login seguro.</p>
+                    </div>
+                </li>
 
-                    <li class="tarefa">
-                        <div class="etiquetas">
-                            <div class="prioridade">Alta</div>
-                            <div class="etiqueta">12/12/2012</div>
-                            <div class="etiqueta">Luísa</div>
-                            <div class="etiqueta">Fabiano</div>
-                        </div>
-                        <div class="tarefa-descricao">
-                            <h2>Revisar código crítico</h2>
-                            <p>Revisar bugs críticos no módulo principal.</p>
-                        </div>
-                    </li>
+                <li class="tarefa">
+                    <div class="etiquetas">
+                        <div class="prioridade">Alta</div>
+                        <div class="etiqueta">12/12/2012</div>
+                        <div class="etiqueta">Luísa</div>
+                        <div class="etiqueta">Fabiano</div>
+                    </div>
+                    <div class="tarefa-descricao">
+                        <h2>Revisar código crítico</h2>
+                        <p>Revisar bugs críticos no módulo principal.</p>
+                    </div>
+                </li>
 
-                    <li class="tarefa">
-                        <div class="etiquetas">
-                            <div class="prioridade">Média</div>
-                            <div class="etiqueta">19/12/2012</div>
-                            <div class="etiqueta">Fernanda</div>
-                        </div>
-                        <div class="tarefa-descricao">
-                            <h2>Atualizar documentação</h2>
-                            <p>Documentar novas funcionalidades e APIs.</p>
-                        </div>
-                    </li>
+                <li class="tarefa">
+                    <div class="etiquetas">
+                        <div class="prioridade">Média</div>
+                        <div class="etiqueta">19/12/2012</div>
+                        <div class="etiqueta">Fernanda</div>
+                    </div>
+                    <div class="tarefa-descricao">
+                        <h2>Atualizar documentação</h2>
+                        <p>Documentar novas funcionalidades e APIs.</p>
+                    </div>
+                </li>
 
-                    <li class="tarefa">
-                        <div class="etiquetas">
-                            <div class="prioridade">Baixa</div>
-                            <div class="etiqueta">12/12/2012</div>
-                            <div class="etiqueta">Luísa</div>
-                        </div>
-                        <div class="tarefa-descricao">
-                            <h2>Otimizar consultas SQL</h2>
-                            <p>Melhorar estrutura e legibilidade do código antigo.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                <li class="tarefa">
+                    <div class="etiquetas">
+                        <div class="prioridade">Baixa</div>
+                        <div class="etiqueta">12/12/2012</div>
+                        <div class="etiqueta">Luísa</div>
+                    </div>
+                    <div class="tarefa-descricao">
+                        <h2>Otimizar consultas SQL</h2>
+                        <p>Melhorar estrutura e legibilidade do código antigo.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </main>
-    <script type="module" src="scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
