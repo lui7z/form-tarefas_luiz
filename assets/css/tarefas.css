@@ -1,0 +1,81 @@
+html{
+    font-family: var(--fonte-poppins);
+}
+
+.main-titulo{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--tundora);
+    display: flex;
+    justify-content: center;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+}
+
+.tarefa {
+    list-style: none;
+    box-sizing: border-box;
+    width: 1024px;
+    border: 1px solid var(--scorpion);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.etiquetas{
+    display: flex;
+    font-weight: 600;
+    gap: 8px;
+}
+
+.etiqueta{
+    border: 1px solid var(--nobel);
+    border-radius: 4px;
+    color: var(--nobel);
+    padding: 4px 8px;
+}
+
+.tarefa-descricao{
+    display: flex;
+    align-items: center;
+    color: var(--cod-gray);
+    gap: 16px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 20px;
+    border-right: 1px solid var(--nobel);
+    padding-right: 16px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.prioridade-alta{
+    background-color: var(--flush-mahogany);
+    border: 0px solid var(--flush-mahogany);
+    border-radius: 4px;
+    color: var(--white);
+    padding: 4px 12px;
+}
+
+.prioridade-media{
+    background-color: var(--yellow-orange);
+    border: 0px solid var(--yellow-orange);
+    border-radius: 4px;
+    color: var(--white);
+    padding: 4px 12px;
+}
+
+.prioridade-baixa{
+    background-color: var(--sushi);
+    border: 0px solid var(--sushi);
+    border-radius: 4px;
+    color: var(--white);
+    padding: 4px 12px;
+}
