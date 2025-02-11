@@ -6,8 +6,13 @@ html{
 /* CSS do Formulário */
 /* ------------------------------------------- */
 
+.formcenter{
+    display: flex;
+    justify-content: center;
+}
+
 .boxform{
-    display: block;
+
     box-sizing: border-box;
     border: 1px solid var(--scorpion);
     border-radius: 16px;
@@ -51,6 +56,10 @@ li{
     border-radius: 8px;
     width: 457px;
     height: 79.5px;
+}
+
+.responsaveis{
+    width: 75%;
 }
 
 .align3{
