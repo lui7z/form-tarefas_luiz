@@ -12,7 +12,6 @@ html{
 }
 
 .boxform{
-
     box-sizing: border-box;
     border: 1px solid var(--scorpion);
     border-radius: 16px;
