@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Tarefas</title>
+    <link href="base/global.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        html{
+            background-color: black;
+            color: white;
+            font-family: var(--fonte-poppins);
+        }
+
+        .inputarea{
+            border-radius: 8px;
+            height: 40px;
+        }
+
+        textarea{
+            border-radius: 8px;
+            height: 79.5px;
+        }
+
+        form{
+            border: 1px solid white;
+            border-radius: 16px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            max-width: 1024px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .form-full-line{
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+
+        .form-half-line{
+            display: flex;
+            gap: 24px;
+            width: 100%;
+        }
+
+        .form-column{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            width: 100%;
+        }
+
+        .checkbox{
+            display: flex;
+            width: 76%;
+            flex-wrap: wrap;
+        }
+
+        .checkbox-item{
+            display: flex;
+            margin-right: 16px;
+            margin-bottom: 8px;
+        }
+
+        .buttons{
+            display: flex;
+            gap: 24px;
+        }
+
+        .clean, .add{
+            padding: 16px;
+        }
+
+        .clean{
+            color: var(--tundora);
+            border: 2px solid var(--tundora);
+            border-radius: 8px;
+            padding: 7px 62.2px;
+        }
+
+        .add{
+            background-color: var(--tundora);
+            color: var(--white);
+            border: 1px solid var(--white);
+            border-radius: 8px;
+            padding: 7px 55.8px;
+        }
+
+    </style>
+    <form class="form">
+        <div class="form-full-line">
+            <div class="form-half-line">
+                <div class="form-column">
+                    <label>Título</label>
+                    <input class="inputarea" placeholder="Ex.: Revisar código crítico">
+                </div>
+            </div>
+            <div class="form-half-line">
+                <div class="form-column">
+                    <label>Prioridade</label>
+                    <select class="inputarea">
+                        <option>Alta</option>
+                        <option>Media</option>
+                        <option>Baixa</option>
+                    </select>
+                </div>
+                <div class="form-column">
+                    <label>Data</label>
+                    <input class="inputarea" type="date">
+                </div>
+            </div>
+        </div>
+        <div class="form-full-line">
+            <div class="form-column">
+                <label>Descrição</label>
+                <textarea placeholder="Revisar bugs críticos no módulo principal."></textarea>
+            </div>
+            <div class="form-column">
+                <label>Responsável (is):</label>
+                <div class="checkbox">
+                    <div class="checkbox-item">
+                        <input id="cb1" type="checkbox">
+                        <label for="cb1">Alice</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input id="cb2" type="checkbox">
+                        <label for="cb2">Carlos</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input id="cb3" type="checkbox">
+                        <label for="cb3">Fabiano</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input id="cb4" type="checkbox">
+                        <label for="cb4">Fernanda</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input id="cb5" type="checkbox">
+                        <label for="cb5">Luísa</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input id="cb6" type="checkbox">
+                        <label for="cb6">Marcos</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-full-line">
+            <div class="buttons">
+                <button class="clean">Limpar</button>
+                <button class="add">Adicionar</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
